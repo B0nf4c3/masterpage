@@ -1,0 +1,171 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+    #nav ul li {
+        float: left;
+    }
+
+        #nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            #nav ul li a:hover {
+                background-color: #111;
+            }
+
+#content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    min-height: 400px;
+}
+.home-image {
+    width: 48%;
+    margin: 10px 1%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.project-gallery img {
+    width: 48%;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 40%;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.portfolio-section {
+    margin-top: 20px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    width: 40%;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+    flex: 1;
+}
+
+    .project-details h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .project-details p {
+        line-height: 1.6;
+    }
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .project-link:hover {
+        background-color: #0056b3;
+    }
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

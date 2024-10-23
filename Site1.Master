@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="masterpage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="/Content/Site.css" />
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to My Personal Website</h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="About.aspx">About Me</a></li>
+            <li><a href="Portfolio.aspx">Portfolio</a></li>
+             <li><a href="Login.aspx">Login</a></li> 
+        </ul>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <p>&copy; 2024 My Personal Website</p>
+    </div>
+</body>
+</html>
